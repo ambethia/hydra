@@ -1,0 +1,172 @@
+body {
+  background-color: #333;
+  color: #ccc;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 10px;
+  line-height: 20px;
+  margin: 0;
+  padding: 5px;
+}
+
+h1, h2, h3, h4, h5, h6, p, pre,
+blockquote, ul, ol, dl, address {
+  margin: 10px 0;
+  padding: 0;
+}
+
+li, dd, blockquote {
+  margin-left: 10px;
+}
+
+a { color: #fff; text-decoration: none; }
+
+li { list-style: none; }
+
+#masthead {
+  background-color: #900;
+  color: #fff;
+  padding: 5px;
+  line-height: 30px;
+  position: relative;
+}
+
+#masthead h1 {
+  font-size: 30px;
+  margin: 0;
+}
+
+#search {
+  line-height: 40px;
+  position:absolute;
+  right: 0;
+  top: 0;
+}
+
+#search input {
+  font-size: 12px;
+  border: none;
+  padding: 4px;
+  width: 80px;
+  background-color: #600;
+  color: #999;
+}
+
+#search button { 
+  background: none;
+  border: none;
+}
+
+#search button img {
+  vertical-align: middle;
+}
+
+#navigation {
+  position: relative;
+  height: 25px;
+}
+
+#navigation p {
+  margin: 0 0 0 5px;
+  line-height: 25px;
+}
+
+#navigation ul {
+  position: absolute;
+  right: 0;
+  height: 40px;
+  margin: 5px 5px 0 0;
+}
+
+#navigation li {
+  background-color: #999;
+  margin-left: 5px;
+  float: left;
+  line-height: 10px;
+  font-size: 11px;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#navigation li a:link, #navigation li a:visited {
+  color: #333;
+}
+
+#navigation li a:focus, #navigation li a:hover {
+  background-color: none;
+  color: #fff;
+}
+
+.projects li.projects, .people li.people {
+  background-color: #fff !important;
+}
+
+.projects li.projects a, .people li.people a {
+  color: #333 !important;
+}
+
+#content {
+  position: relative;
+  background-color: #fff;
+  color: #333;
+  font-family: "Georgia", serif;
+  padding: 5px;
+}
+
+#content a:link { color: #900; text-decoration: none; }
+#content a:visited { color: #600 }
+#content a:focus, #content a:hover { background-color: #ffc }
+#content a:active { color: #fff; background-color: #900 }
+
+#flash {
+  width: auto;
+  position: absolute;
+  padding: 0 5px;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  line-height: 22px;
+  font-size: 12px;
+  height: 22px;
+  border-top: 2px solid #333;
+  border-bottom: 1px dotted #333;
+}
+
+#flash.message {
+  color: #060;
+  border-color: #060;
+  background-color: #DED;
+}
+
+#flash.error {
+  color: #900;
+  border-color: #900;
+  background-color: #ECC;
+}
+
+#heading {
+  position: relative;
+  margin-top: 30px;
+}
+
+#heading h2 {
+  line-height: 20px;
+  font-size: 25px;
+  margin: 5px 0;
+}
+
+#heading h3 {
+  color: #666;
+  font-size: 15px;
+  line-height: 5px;
+  font-weight: normal;
+  font-style: italic;
+}
+
+#favorite {
+  padding: 3px 5px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+

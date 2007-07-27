@@ -1,0 +1,188 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+	<title>Hydra &#8212; Rails Analyzer</title>
+
+	<link rel="stylesheet" href="stylesheets/screen.css" type="text/css" media="screen" title="Hydra Styles" charset="utf-8" />
+	
+</head>
+
+<body>
+
+<div id="hydra" class="projects">
+  
+<div id="masthead">
+
+  <h1>Hydra</h1>
+
+  <div id="search">
+    
+    <form action="#" method="get" accept-charset="utf-8">
+      <label for="search_query">Search</label>
+      <input id="search_query" type="text" name="q" />
+      <button type="submit">
+        <img src="images/icons/magnifier.png" width="16" height="16" alt="Search Icon" />
+      </button>  
+    </form>
+    
+  </div>
+  
+</div>
+
+<div id="navigation">
+
+<ul>
+  <li class="projects"><a href="#">Projects</a></li>
+  <li class="people"><a href="#">People</a></li>
+</ul>
+
+<p><a href="#">Home</a> &#8250; <a href="#">Projects</a> &#8250; Rails Log Analyzer</p>
+
+</div>
+
+<div id="content">
+
+  <div id="flash" class="message">You Have Successfully seen a flash message.</div>
+
+  <div id="heading">
+
+    <h2>Rails Log Analyzer</h2>
+
+    <h3>Reads the Rails log files and exposes potential points of optimization.</h3>
+    
+    <div id="favorite">
+      <img src="images/icons/star.png" width="32" height="32" alt="Star Icon" />
+    </div>
+    
+  </div>
+
+
+  <h4>General Information</h4>
+
+  <p>The Rails Analyzer project contains a collection of tools for Rails that let you discover biggest slow spots in your applications allowing you to best focus optimization efforts.</p>
+
+  <p>The <strong>Production Log Analyzer</strong> examines Rails log files and gives a report showing you the worst speed offendors. It also includes <code>action_grep</code> which will give you all log results for a particular action.</p>
+
+  <p>The <strong>Action Profiler</strong> lets you profile actions to determine points of optimization.</p>
+
+  <p><strong>Rails Analyzer Tools</strong> is a collection of tools for benchmarking and monitoring a Rails application. The most useful is <code>rails_stat</code> which gives a live counter of requests per second of a running Rails app.</p>
+
+  <p>The <strong>SQL Dependency Grapher</strong> allows you to visualize the frequency of table dependencies in a Rails application.</p>
+
+  <h4>Getting It</h4>
+
+  <p>Most of the tools can be installed installed via rubygems:</p>
+
+  <pre>
+  gem install rails_analyzer_tools action_profiler production_log_analyzer
+  </pre>
+
+  <p>The SQL Dependency Grapher can only be downloaded separately from rubyforge. A public SCM repository is not available.</p>
+
+  <h4>Components &#38; Dependencies</h4>
+
+  <p>
+    <a href="#">action_profiler</a>,
+    <a href="#">hoe</a>,
+    <a href="#">seq_dep_graph</a>,
+    <a href="#">SyslogLogger</a>,
+    <a href="#">prodution_log_analyzer</a>,
+    <a href="#">rails_analyzer_tools</a>
+  </p>
+
+  <h4>Using It</h4>
+
+  <p>Lorem ipsum dolor sit amet consectetur
+  adipisicing elit.</p>
+
+  <ul>
+    <li>Quis nostrud exercitation ullamco.</li>
+  </ul>
+
+  <h4>Who&#8217;s Using It?</h4>
+
+  <p>
+    <a href="#">The Robot-Coop</a>,
+    <a href="#">TalentDatabase</a>,
+    <a href="#">Etc.</a>
+  </p>
+
+  <h4><img src="images/icons/user.png" width="16" height="16" alt="People Icon"/> People</h4>
+
+  <ul>
+    <li>
+      <img src="images/avatars/hodel-16.png" width="16" height="16" alt="Avatar of Eric Hodel" />
+      <a href="#">Eric Hodel</a> is the author.
+    </li>
+  </ul>
+
+  <h4><img src="images/icons/link.png" width="16" height="16" alt="Ties Icon"/> Ties</h4>
+
+  <ul>
+    <li><a href="#">RubyForge</a> hosts this project.</li>
+    <li><a href="#">Nuby on Rails</a> has a tutorial.</li>
+    <li><a href="#">The Robot Co-op</a> has documentation.</li>
+    <li><a href="#">Rails Log Visualizer</a> is a simiar project.</li>
+    <li><a href="#">RAWK</a> is a similar project.</li>
+    <li><a href="#">Lorem Ipsum</a> dolor sit amet.</li>
+  </ul>
+
+  <h4><img src="images/icons/tag.png" width="16" height="16" alt="Tags Icon"/> Tags</h4>
+
+  <p>
+    <a href="#">analyzer</a>,
+    <a href="#">debug</a>,
+    <a href="#">logger</a>,
+    <a href="#">logs</a>,
+    <a href="#">performance</a>,
+    <a href="#">production</a>,
+    <a href="#">profiler</a>,
+    <a href="#">rails</a>,
+    <a href="#">robot-co-op</a>,
+    <a href="#">statistics</a>,
+    <a href="#">sql</a>,
+    <a href="#">syslog</a>
+  </p>
+
+  <h4><img src="images/icons/comment.png" width="16" height="16" alt="Comments Icon"/>Comments</h4>
+
+  <ul>
+    <li>
+      <img src="images/avatars/hodel-40.png" width="40" height="40" alt="Avatar of Eric Hodel" />
+      <p><a href="#">Eric Hodel</a> says:</p>
+      <blockquote>
+        <p>I have used bench and crawl to tune the number of FastCGI processes running on 43things.com, determine if HyperThreading would give a performance benefit or not (it did) and find a fatal threading bug in MySQL.</p>
+      </blockquote>
+    </li>
+    <li>
+      <img src="images/avatars/topfunky-40.png" width="40" height="40" alt="Avatar of Geoffrey Grosenbach" />
+      <p><a href="#">Geoffrey Grosenbach</a> says:</p>
+      <blockquote>
+        <p>The Rails Analyzer Tools are a very useful way to keep tabs on the performance of your site.</p>
+      </blockquote>
+    </li>
+  </ul>
+
+  <p><a href="#">More Comments&#133;</a></p>
+  
+</div>
+
+<div id="foot">
+
+  <p id="copyright">&#169; 2007 <a href="http://paint.itred.org">Paint.itRed</a></p>
+
+  <ul id="session"> 
+    <li><a href="#">Jason L Perry</a></li>
+    <li><a href="#">Logout</a></li>
+  </ul>
+
+</div>
+
+</div>
+
+</body>
+</html>
