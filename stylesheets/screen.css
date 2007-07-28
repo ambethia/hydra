@@ -1,57 +1,91 @@
+/**
+ * Hydra CSS Styles
+ * Copyright (c) 2007, Paint.itRed
+ * http://paint.itred.org
+*/
+
 body {
-  background-color: #333;
-  color: #ccc;
-  font-family: "Helvetica Neue", Helvetica, sans-serif;
-  font-size: 10px;
-  line-height: 20px;
+  font-size: 75%;
+}
+
+html>body {
+  font-size: 12px;
+}
+
+body, div, dl, dt, dd, ul, ol, li,
+h1, h2, h3, h4, h5, h6, pre, form,
+fieldset, p, blockquote, th, td {
   margin: 0;
-  padding: 5px;
+  padding: 0;
 }
 
 h1, h2, h3, h4, h5, h6, p, pre,
 blockquote, ul, ol, dl, address {
-  margin: 10px 0;
+  margin: 1.5em 0;
   padding: 0;
 }
 
 li, dd, blockquote {
-  margin-left: 10px;
+  margin-left: 1em;
 }
 
-a { color: #fff; text-decoration: none; }
+a {
+  color: #fff;
+  text-decoration: none
+}
 
-li { list-style: none; }
+li {
+  list-style: none
+}
+
+#hydra {
+  color: #ccc;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  line-height: 1.5em;
+  padding: 0.5em;
+  background-color: #333;
+}
+
+/* Masthead --------------------------------------------------------------- */
 
 #masthead {
   background-color: #900;
   color: #fff;
-  padding: 5px;
-  line-height: 30px;
+  padding:  0.5em;
   position: relative;
 }
 
 #masthead h1 {
-  font-size: 30px;
+  font-size: 2em;
+  line-height: 0.75em;
   margin: 0;
 }
 
+/* Search ----------------------------------------------------------------- */
+
 #search {
-  line-height: 40px;
-  position:absolute;
+  line-height: 2.5em;
+  position: absolute;
   right: 0;
   top: 0;
 }
 
 #search input {
-  font-size: 12px;
+  font-size: 1em;
   border: none;
-  padding: 4px;
-  width: 80px;
+  padding: 0.15em 0.25em;
+  width: 6em;
   background-color: #600;
-  color: #999;
+  color: #ccc;
 }
 
-#search button { 
+#search input.active {
+  width: 18em;
+  background-color: #eee;
+  color: #333;
+}
+
+#search button {
   background: none;
   border: none;
 }
@@ -60,30 +94,36 @@ li { list-style: none; }
   vertical-align: middle;
 }
 
+#search label {
+  color: #ccc;
+  margin-right: 0.5em;
+  font-weight: bold;
+}
+
+/* Navigation ------------------------------------------------------------- */
+
 #navigation {
   position: relative;
-  height: 25px;
+  font-size: 0.8333em;
+  line-height: 1.8em;
 }
 
 #navigation p {
-  margin: 0 0 0 5px;
-  line-height: 25px;
+  margin: 0 0 0 0.5em;
+  line-height: 2.5em;
 }
 
 #navigation ul {
   position: absolute;
   right: 0;
-  height: 40px;
-  margin: 5px 5px 0 0;
+  margin: 0.5em 0.5em 0 0;
 }
 
 #navigation li {
   background-color: #999;
-  margin-left: 5px;
+  margin-left: 0.5em;
   float: left;
-  line-height: 10px;
-  font-size: 11px;
-  padding: 5px 10px;
+  padding: 0.12em 1em 0.13em 1em;
   text-transform: uppercase;
   font-weight: bold;
 }
@@ -105,31 +145,70 @@ li { list-style: none; }
   color: #333 !important;
 }
 
+/* Main Content Area ------------------------------------------------------ */
+
 #content {
   position: relative;
   background-color: #fff;
   color: #333;
   font-family: "Georgia", serif;
-  padding: 5px;
+  padding: 0.5em;
+  font-size: 1em;
+  line-height: 1.5em;
+  _height:1%;
+  overflow:auto;
 }
 
-#content a:link { color: #900; text-decoration: none; }
-#content a:visited { color: #600 }
-#content a:focus, #content a:hover { background-color: #ffc }
-#content a:active { color: #fff; background-color: #900 }
+#content img {
+  vertical-align: middle;
+}
+
+#content a:link {
+  color: #900;
+  text-decoration: none;
+}
+
+#content a:visited {
+  color: #600
+}
+
+#content a:focus, #content a:hover {
+  background-color: #ffc
+}
+
+#content a:active {
+  color: #fff;
+  background-color: #900
+}
+
+#content h4 a {
+  display: block;
+  color: #333 !important;
+  border-top: 0.1666em solid #333;
+  border-bottom: 0.0833em dotted #333;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  text-transform: uppercase;
+  padding: 0 0 0 0;
+  margin: 0.5em 0 1.5em 0;
+}
+
+#content h4 a:hover {
+  background-image: url(../images/icons/edit.gif);
+  background-position: right 45%;
+  background-repeat: no-repeat;
+}
+
+/* Flash Messages --------------------------------------------------------- */
 
 #flash {
   width: auto;
   position: absolute;
-  padding: 0 5px;
-  top: 5px;
-  left: 5px;
-  right: 5px;
-  line-height: 22px;
-  font-size: 12px;
-  height: 22px;
-  border-top: 2px solid #333;
-  border-bottom: 1px dotted #333;
+  padding: 0.125em 0.5em;
+  top: 0.5em;
+  left: 0.5em;
+  right: 0.5em;
+  border-top: 0.1666em solid #333;
+  border-bottom: 0.0833em dotted #333;
 }
 
 #flash.message {
@@ -144,29 +223,44 @@ li { list-style: none; }
   background-color: #ECC;
 }
 
+/* Primary Content Heading ------------------------------------------------ */
+
 #heading {
   position: relative;
-  margin-top: 30px;
+  margin-top: 3em;
 }
 
 #heading h2 {
-  line-height: 20px;
-  font-size: 25px;
-  margin: 5px 0;
+  line-height: 0.5em;
+  font-size: 3em;
+  margin: 0 0 0.25em 0;
 }
 
 #heading h3 {
   color: #666;
-  font-size: 15px;
-  line-height: 5px;
+  font-size: 1.1667em;
+  line-height: 1.286em;
+  margin: 0;
+  
   font-weight: normal;
   font-style: italic;
 }
 
 #favorite {
-  padding: 3px 5px;
   position: absolute;
   right: 0;
-  top: 0;
+  bottom: 0;
 }
 
+/* Primary, Secondary & Tertiary Structure -------------------------------- */
+
+#primary {
+  float: left;
+  min-width: 32em;
+  width: 62%;
+}
+
+#secondary {
+  margin-left: 62%;
+  padding-left: 0.5em;
+}
