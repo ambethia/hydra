@@ -6,6 +6,7 @@
 
 body {
   font-size: 75%;
+  background-color: #333;
 }
 
 html>body {
@@ -21,7 +22,7 @@ fieldset, p, blockquote, th, td {
 
 h1, h2, h3, h4, h5, h6, p, pre,
 blockquote, ul, ol, dl, address {
-  margin: 1.5em 0;
+  margin:  1.5em 0;
   padding: 0;
 }
 
@@ -41,9 +42,7 @@ li {
 #hydra {
   color: #ccc;
   font-family: "Helvetica Neue", Helvetica, sans-serif;
-  line-height: 1.5em;
   padding: 0.5em;
-  background-color: #333;
 }
 
 /* Masthead --------------------------------------------------------------- */
@@ -154,13 +153,17 @@ li {
   font-family: "Georgia", serif;
   padding: 0.5em;
   font-size: 1em;
-  line-height: 1.5em;
   _height:1%;
   overflow:auto;
 }
 
+#content p, #content li {
+  line-height: 1.5em;
+}
+
 #content img {
   vertical-align: middle;
+  
 }
 
 #content a:link {
@@ -184,12 +187,14 @@ li {
 #content h4 a {
   display: block;
   color: #333 !important;
-  border-top: 0.1666em solid #333;
-  border-bottom: 0.0833em dotted #333;
+  border-top: 0.1666em solid #666;
+  border-bottom: 0.0834em dotted #999;
+  font-size: 1em;
+  line-height: 1.5em;
+  padding: 0.25em 0;
+  margin: 0 0 -0.75em 0;
   font-family: "Helvetica Neue", Helvetica, sans-serif;
   text-transform: uppercase;
-  padding: 0 0 0 0;
-  margin: 0.5em 0 1.5em 0;
 }
 
 #content h4 a:hover {
@@ -198,17 +203,56 @@ li {
   background-repeat: no-repeat;
 }
 
+/* Footer ----------------------------------------------------------------- */
+
+#foot {
+  margin-top: 0.5em;
+  font-size: 0.833em;
+  line-height: 1.8em;
+}
+
+#copyright {
+  margin: 0;
+}
+
+#session {
+  float: right;
+  margin: 0 0 0.6em 0;
+}
+
+#session li {
+  margin-left: 0.6em;
+  float: left;
+}
+
+#session li a {
+  display: block;
+  font-weight: bold;
+  line-height: 1.5em;
+  padding: 0.1em 0.6em 0.2em 0.6em;
+}
+
+#session li a:link {
+  color: #333;
+  background-color: #999;
+}
+
+#session li a:hover {
+  color: #900;
+  background-color: #ffc;
+}
+
+
 /* Flash Messages --------------------------------------------------------- */
 
 #flash {
   width: auto;
-  position: absolute;
-  padding: 0.125em 0.5em;
-  top: 0.5em;
-  left: 0.5em;
-  right: 0.5em;
   border-top: 0.1666em solid #333;
-  border-bottom: 0.0833em dotted #333;
+  border-bottom: 0.0834em dotted #333;
+  font-size: 1em;
+  line-height: 1.5em;
+  padding: 0.25em 0;
+  margin: 0 0 1.5em 0;
 }
 
 #flash.message {
@@ -227,13 +271,12 @@ li {
 
 #heading {
   position: relative;
-  margin-top: 3em;
 }
 
 #heading h2 {
   line-height: 0.5em;
   font-size: 3em;
-  margin: 0 0 0.25em 0;
+  margin: 0.5em 0 0.25em 0;
 }
 
 #heading h3 {
@@ -263,4 +306,38 @@ li {
 #secondary {
   margin-left: 62%;
   padding-left: 0.5em;
+}
+
+/* Comments --------------------------------------------------------------- */
+
+ul.comments {
+  
+}
+
+ul.comments img {
+  float: left;
+}
+
+/* Misc Typography -------------------------------------------------------- */
+
+#content code {
+  font-family: ProFont, Monaco, monospace;
+  /* 10px, small line-height is needed because of rendering bug. */
+  font-size: 0.833em; 
+  line-height: 1em 
+}
+
+#content pre {
+  background-color: #999;
+  color: #fff;
+  overflow: hidden;
+}
+
+#content pre code {
+  font-size: 0.833em;
+  line-height: 1.8em;
+}
+
+#content li img {
+  float: left;
 }
