@@ -22,11 +22,13 @@
   <div id="search">
     
     <form action="#" method="get" accept-charset="utf-8">
-      <label for="search_query">Search</label>
-      <input id="search_query" type="text" name="q" />
-      <button type="submit">
-        <img src="images/icons/magnifier.png" width="16" height="16" alt="Search Icon" />
-      </button>  
+      <fieldset>
+        <label for="search_query">Search</label>
+        <input id="search_query" type="text" name="q" />
+        <button type="submit">
+          <img src="images/icons/magnifier.png" width="16" height="16" alt="Search Icon" />
+        </button>
+      </fieldset>  
     </form>
     
   </div>
@@ -63,6 +65,7 @@
 
 <div id="primary">
   
+<div id="general_information" class="module">
   <h4><a href="#">General Information</a></h4>
 
   <p>The Rails Analyzer project contains a collection of tools for Rails that let you discover biggest slow spots in your applications allowing you to best focus optimization efforts.</p>
@@ -74,18 +77,26 @@
   <p><strong>Rails Analyzer Tools</strong> is a collection of tools for benchmarking and monitoring a Rails application. The most useful is <code>rails_stat</code> which gives a live counter of requests per second of a running Rails app.</p>
 
   <p>The <strong>SQL Dependency Grapher</strong> allows you to visualize the frequency of table dependencies in a Rails application.</p>
+</div>
 
+</div>
+
+<div id="secondary">
+
+<div id="secondary_alpha">
+
+<div id="getting_it" class="module">
   <h4><a href="#">Getting It</a></h4>
 
   <p>Most of the tools can be installed installed via rubygems:</p>
 
-  <pre><code>
-  gem install rails_analyzer_tools action_profiler production_log_analyzer
-  </code></pre>
+<pre><code>gem install rails_analyzer_tools action_profiler production_log_analyzer</code></pre>
 
   <p>The SQL Dependency Grapher can only be downloaded separately from rubyforge. A public SCM repository is not available.</p>
+</div>
 
-  <h4>Components &#38; Dependencies</h4>
+<div id="components_dependencies" class="module">
+  <h4><a href="#">Components &#38; Dependencies</a></h4>
 
   <p>
     <a href="#">action_profiler</a>,
@@ -95,7 +106,13 @@
     <a href="#">prodution_log_analyzer</a>,
     <a href="#">rails_analyzer_tools</a>
   </p>
+</div>
+  
+</div>
 
+<div id="secondary_beta">
+
+<div id="using_it" class="module">
   <h4><a href="#">Using It</a></h4>
 
   <p>Lorem ipsum dolor sit amet consectetur
@@ -104,7 +121,9 @@
   <ul>
     <li>Quis nostrud exercitation ullamco.</li>
   </ul>
+</div>
 
+<div id="whos_using_it" class="module">
   <h4><a href="#">Who&#8217;s Using It?</a></h4>
 
   <p>
@@ -112,20 +131,26 @@
     <a href="#">TalentDatabase</a>,
     <a href="#">Etc.</a>
   </p>
+</div>
+  
+</div>
   
 </div>
 
-<div id="secondary">
-  
+<div id="tertiary">
+
+<div id="people" class="module">
   <h4><a href="#">People</a></h4>
 
   <ul>
-    <li>
+    <li class="vcard">
       <img src="images/avatars/hodel-16.png" width="16" height="16" alt="Avatar of Eric Hodel" />
-      <a href="#">Eric Hodel</a> is the author.
+      <a href="#" class="url fn">Eric Hodel</a> is the author.
     </li>
   </ul>
+</div>
 
+<div id="ties" class="module">
   <h4><a href="#">Ties</a></h4>
 
   <ul>
@@ -136,7 +161,10 @@
     <li><a href="#">RAWK</a> is a similar project.</li>
     <li><a href="#">Lorem Ipsum</a> dolor sit amet.</li>
   </ul>
+</div>
 
+
+<div id="tags" class="module">
   <h4><a href="#">Tags</a></h4>
 
   <p>
@@ -153,28 +181,31 @@
     <a href="#">sql</a>,
     <a href="#">syslog</a>
   </p>
+</div>
 
+<div id="comments" class="module">
   <h4><a href="#">Comments</a></h4>
 
-  <ul class="comments">
+  <ul>
     <li>
       <img src="images/avatars/hodel-40.png" width="40" height="40" alt="Avatar of Eric Hodel" />
-      <p><a href="#">Eric Hodel</a> says:</p>
+      <p class="vcard"><a href="#" class="url fn">Eric Hodel</a> says:</p>
       <blockquote>
         <p>I have used bench and crawl to tune the number of FastCGI processes running on 43things.com, determine if HyperThreading would give a performance benefit or not (it did) and find a fatal threading bug in MySQL.</p>
       </blockquote>
     </li>
     <li>
       <img src="images/avatars/topfunky-40.png" width="40" height="40" alt="Avatar of Geoffrey Grosenbach" />
-      <p><a href="#">Geoffrey Grosenbach</a> says:</p>
+      <p class="vcard"><a href="#" class="url fn">Geoffrey Grosenbach</a> says:</p>
       <blockquote>
         <p>The Rails Analyzer Tools are a very useful way to keep tabs on the performance of your site.</p>
       </blockquote>
     </li>
   </ul>
 
-  <p><a href="#">More Comments&#133;</a></p>
-  
+  <p class="more"><a href="#">More Comments&#133;</a></p>
+</div>
+
 </div>
   
 </div>

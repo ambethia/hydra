@@ -45,6 +45,60 @@ li {
   padding: 0.5em;
 }
 
+/* Primary, Secondary & Tertiary Structure -------------------------------- */
+
+#primary {
+  float: left;
+  width: 62%;
+}
+
+#secondary {
+  float: left;
+  width: 62%;
+}
+
+#secondary_alpha {
+  float: left;
+  width: 50%;
+}
+
+#secondary_beta {
+  margin-left: 50%;
+  padding-left: 0.5em;
+}
+
+#tertiary {
+  margin-left: 62%;
+  padding-left: 0.5em;
+}
+
+/* -- reset to single column for narrow/mobile screens -------------------- */
+
+#hydra.narrow #primary {
+  float: none;
+  width: auto;
+}
+
+#hydra.narrow #secondary {
+  float: none;
+  width: auto;
+}
+
+#hydra.narrow #secondary_alpha {
+  float: none;
+  width: auto;
+}
+
+#hydra.narrow #secondary_beta {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+#hydra.narrow #tertiary {
+  margin-left: 0;
+  padding-left: 0;
+}
+
 /* Masthead --------------------------------------------------------------- */
 
 #masthead {
@@ -99,6 +153,12 @@ li {
   font-weight: bold;
 }
 
+#search fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
 /* Navigation ------------------------------------------------------------- */
 
 #navigation {
@@ -132,7 +192,7 @@ li {
 }
 
 #navigation li a:focus, #navigation li a:hover {
-  background-color: none;
+  background-color: transparent;
   color: #fff;
 }
 
@@ -161,11 +221,6 @@ li {
   line-height: 1.5em;
 }
 
-#content img {
-  vertical-align: middle;
-  
-}
-
 #content a:link {
   color: #900;
   text-decoration: none;
@@ -180,11 +235,11 @@ li {
 }
 
 #content a:active {
-  color: #fff;
+  color: #ffc;
   background-color: #900
 }
 
-#content h4 a {
+#content .module h4 a {
   display: block;
   color: #333 !important;
   border-top: 0.1666em solid #666;
@@ -197,10 +252,15 @@ li {
   text-transform: uppercase;
 }
 
-#content h4 a:hover {
+#content .module h4 a:focus, #content .module h4 a:hover {
+  background-color: #ffc;
   background-image: url(../images/icons/edit.gif);
   background-position: right 45%;
   background-repeat: no-repeat;
+}
+
+#content .module h4 a:active {
+  background-color: #ffc;
 }
 
 /* Footer ----------------------------------------------------------------- */
@@ -232,16 +292,20 @@ li {
   padding: 0.1em 0.6em 0.2em 0.6em;
 }
 
-#session li a:link {
+#session li a:link, #session li a:visited {
   color: #333;
-  background-color: #999;
+  background-color: #666;
 }
 
-#session li a:hover {
+#session li a:focus, #session li a:hover {
   color: #900;
   background-color: #ffc;
 }
 
+#session li a:active {
+  color: #ffc;
+  background-color: #900;
+}
 
 /* Flash Messages --------------------------------------------------------- */
 
@@ -276,14 +340,14 @@ li {
 #heading h2 {
   line-height: 0.5em;
   font-size: 3em;
-  margin: 0.5em 0 0.25em 0;
+  margin: 0.5em 32px 0.25em 0;
 }
 
 #heading h3 {
   color: #666;
   font-size: 1.1667em;
   line-height: 1.286em;
-  margin: 0;
+  margin: 0 32px 0 0;
   
   font-weight: normal;
   font-style: italic;
@@ -295,41 +359,18 @@ li {
   bottom: 0;
 }
 
-/* Primary, Secondary & Tertiary Structure -------------------------------- */
-
-#primary {
-  float: left;
-  min-width: 32em;
-  width: 62%;
-}
-
-#secondary {
-  margin-left: 62%;
-  padding-left: 0.5em;
-}
-
-/* Comments --------------------------------------------------------------- */
-
-ul.comments {
-  
-}
-
-ul.comments img {
-  float: left;
-}
-
-/* Misc Typography -------------------------------------------------------- */
+/* Code Blocks ------------------------------------------------------------ */
 
 #content code {
   font-family: ProFont, Monaco, monospace;
-  /* 10px, small line-height is needed because of rendering bug. */
   font-size: 0.833em; 
-  line-height: 1em 
+  line-height: 0;
 }
 
 #content pre {
   background-color: #999;
   color: #fff;
+  padding: 0 0.6em;
   overflow: hidden;
 }
 
@@ -338,6 +379,88 @@ ul.comments img {
   line-height: 1.8em;
 }
 
-#content li img {
+/* Comments --------------------------------------------------------------- */
+
+#comments {
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+#comments li {
+  margin: 0 0 1.5em;
+}
+
+#comments ul img {
   float: left;
+  padding-top: 0.35em;
+}
+
+#comments p {
+  font-size: 0.916em; 
+  line-height: 1.636em;
+  margin: 0;
+}
+
+#comments blockquote {
+  margin: 0;
+  font-family: "Georgia", serif;
+}
+
+#comments blockquote p {
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+#comments .vcard, #comments blockquote {
+  margin-left: 40px;
+  padding-left: 0.5em;
+}
+
+
+#comments .vcard a {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#comments .more {
+  text-align: right;
+}
+
+/* Ties ------------------------------------------------------------------- */
+
+#ties li {
+  margin-left: 0;
+}
+
+#ties li a {
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 0.916em; 
+  line-height: 0;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* People ----------------------------------------------------------------- */
+
+#people li {
+  position: relative;
+  margin-left: 0;
+}
+
+#people li.vcard a {
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 0.916em; 
+  line-height: 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-left: 1.833em;
+}
+
+
+#people li.vcard img {
+  height: 1.333em;
+  width: 1.333em;
+  position: absolute;
+  top: 50%;
+  margin-top: -0.666em;
+  padding-right: 0.5em;
 }
